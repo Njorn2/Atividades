@@ -10,5 +10,5 @@ console.log("Ã".charCodeAt(0)); // Output: 195
 console.log(String.fromCharCode(97)); // Output: 'a'
 console.log(String.fromCharCode(65)); // Output: 'A'
 
-console.log(String.fromCharCode(227)); // Output: 'ã'
+console.log(String.fromCharCode(22s7)); // Output: 'ã'
 console.log(String.fromCharCode(195)); // Output: 'Ã'
