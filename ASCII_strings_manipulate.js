@@ -1,3 +1,4 @@
+
 let lower = 'a'; // ASCII code 97
 let upper = 'A'; // ASCII code 65
 
@@ -74,8 +75,39 @@ function alphabetStringUpper() {
 function alphabetStringUpperLower() {
     let alph = ""
     for (let i = 0; i < 26; i++) {
-        alph = alph + String.fromCharCode(i + 65) 
+        alph = alph + String.fromCharCode(i + 65)  
         alph = alph + String.fromCharCode(i + 97);
     }
     return alph
+}
+
+function toUpperCase(palavra){
+for (let i = 0; i < palavra.length; i++){
+    let codLetra = palavra.charCodeAt(i)
+    let letra
+    if (codLetra >= 97 && codLetra <= 122){
+        letra = String.fromCharCode(codLetra - 32);
+    } 
+    else {
+        
+        letra = String.fromCharCode(codLetra);
+    }
+//    console.log(codLetra)
+    console.log(letra)
+}
+}
+
+function toLowerCase(palavra){
+for (let i = 0; i < palavra.length; i++){
+    let codLetra = palavra.charCodeAt(i)
+    let letra
+    if (codLetra >= 65 && codLetra <= 90){
+        letra = String.fromCharCode(codLetra + 32);
+    } 
+    else {
+        letra = String.fromCharCode(codLetra);
+    }
+//    console.log(codLetra)
+    console.log(letra)
+}
 }
