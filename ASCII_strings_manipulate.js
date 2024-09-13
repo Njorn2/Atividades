@@ -82,32 +82,31 @@ function alphabetStringUpperLower() {
 }
 
 function toUpperCase(palavra){
-for (let i = 0; i < palavra.length; i++){
-    let codLetra = palavra.charCodeAt(i)
-    let letra
-    if (codLetra >= 97 && codLetra <= 122){
-        letra = String.fromCharCode(codLetra - 32);
-    } 
-    else {
-        
-        letra = String.fromCharCode(codLetra);
+    for (let i = 0; i < palavra.length; i++){
+        let codLetra = palavra.charCodeAt(i)
+        let letra
+        if (codLetra >= 97 && codLetra <= 122){
+            letra = String.fromCharCode(codLetra - 32);
+        } 
+        else {
+            
+            letra = String.fromCharCode(codLetra);
+        }
+    //    console.log(codLetra)
+        console.log(letra)
     }
-//    console.log(codLetra)
-    console.log(letra)
-}
 }
 
 function toLowerCase(palavra){
-for (let i = 0; i < palavra.length; i++){
-    let codLetra = palavra.charCodeAt(i)
-    let letra
-    if (codLetra >= 65 && codLetra <= 90){
-        letra = String.fromCharCode(codLetra + 32);
-    } 
-    else {
-        letra = String.fromCharCode(codLetra);
+    for (let i = 0; i < palavra.length; i++){
+        let codLetra = palavra.charCodeAt(i)
+        let letra
+        if (codLetra >= 65 && codLetra <= 90){
+            letra = String.fromCharCode(codLetra + 32);
+        } 
+        else {
+            letra = String.fromCharCode(codLetra);
+        }
+        console.log(letra)
     }
-//    console.log(codLetra)
-    console.log(letra)
-}
 }
