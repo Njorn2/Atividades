@@ -81,32 +81,36 @@ function alphabetStringUpperLower() {
     return alph
 }
 
-function toUpperCase(palavra){
+// Passa caracteres minusculos para maiusculos
+// Eex: Input "aaaaa", Output "AAAAA"
+function toUpperCase(palavra) {
+    let result = "";
     for (let i = 0; i < palavra.length; i++){
-        let codLetra = palavra.charCodeAt(i)
-        let letra
+        let codLetra = palavra.charCodeAt(i);
+        let letra = "";
         if (codLetra >= 97 && codLetra <= 122){
             letra = String.fromCharCode(codLetra - 32);
-        } 
-        else {
-            
+        } else {
             letra = String.fromCharCode(codLetra);
         }
-    //    console.log(codLetra)
-        console.log(letra)
+        result += letra;
     }
+    return result;
 }
 
+// Passa caracteres maiusculos para minusculos
+// Eex: Input "AAAAA", Output "aaaaa"
 function toLowerCase(palavra){
-    for (let i = 0; i < palavra.length; i++){
-        let codLetra = palavra.charCodeAt(i)
-        let letra
-        if (codLetra >= 65 && codLetra <= 90){
+    let result = "";
+    for (let i = 0; i < palavra.length; i++) {
+        let codLetra = palavra.charCodeAt(i);
+        let letra = "";
+        if (codLetra >= 65 && codLetra <= 90) {
             letra = String.fromCharCode(codLetra + 32);
-        } 
-        else {
+        } else {
             letra = String.fromCharCode(codLetra);
         }
-        console.log(letra)
+        result += letra;
     }
+    return result;
 }
